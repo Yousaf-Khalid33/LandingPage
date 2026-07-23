@@ -1078,38 +1078,39 @@ img { max-width: 100%; }
 /* ===== CONTACT ===== */
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 56px;
+  grid-template-columns: 1fr;
+  gap: 24px;
   align-items: start;
-  max-width: 1000px;
+  max-width: 640px;
   margin: 0 auto;
 }
-.contact-info { display: flex; flex-direction: column; gap: 16px; }
+.contact-info { display: flex; flex-direction: column; gap: 18px; }
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 18px;
   background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 16px 20px;
-  transition: border-color var(--transition), transform var(--transition);
+  border: 1px solid rgba(255,255,255,0.03);
+  border-radius: 14px;
+  padding: 18px 22px;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.45);
 }
-.contact-item:hover { border-color: var(--border-glow); transform: translateX(4px); }
+.contact-item:hover { border-color: var(--border-glow); transform: translateY(-6px); box-shadow: 0 14px 40px rgba(0,0,0,0.5); }
 .contact-icon {
-  width: 42px;
-  height: 42px;
-  min-width: 42px;
-  border-radius: 10px;
-  background: rgba(99,102,241,0.12);
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(99,102,241,0.12), rgba(139,92,246,0.08));
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--accent-1);
-  font-size: 0.95rem;
+  font-size: 1.1rem;
 }
-.contact-label { display: block; font-size: 0.7rem; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; }
-.contact-value { display: block; font-size: 0.875rem; font-weight: 600; color: var(--text-primary); margin-top: 2px; word-break: break-all; }
+.contact-label { display: block; font-size: 0.75rem; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; }
+.contact-value { display: block; font-size: 1rem; font-weight: 800; color: var(--text-primary); margin-top: 4px; word-break: break-all; }
 
 /* Contact Form */
 .contact-form { display: flex; flex-direction: column; gap: 20px; }
