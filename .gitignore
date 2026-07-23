@@ -1,0 +1,20 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Build / dependency folders
+node_modules/
+dist/
+build/
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Vercel config / local CLI files
+.vercel/
